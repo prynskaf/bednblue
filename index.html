@@ -1,12 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>BEDNBLUES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo for bednblues.png" type = "image/png">
+    </head>
+    <body>
+        
+        
+        <header class = "header" id = "header">
+            <div class = "head-top">
+               <div class="logo-name">
+                <img src = "images/logo for bednblues.png"  alt = "logo">
+            </div>
+
+                <div class = "site-nav">
+            
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+                
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>MOOIE EN COMFORTABELE PLAATS OM TE VERBLIJVEN</h2>
+                <p>Het goed uitgeruste vakantieresort Bed ‘N Blues is centraal gelegen in het hart van Halen.
+                    U kunt bij ons terecht voor een kort weekendverblijf, maar ook voor zakenmensen die op bezoek komen
+                    Bedrijven in de buurt zullen deze comfortabele woning met gratis internetverbinding op prijs stellen.
+                     Bed 'N Blues is een oase van rust in een ontspannen sfeer waar muziek en kunst altijd zullen harmoniseren.</p>
+                <button type = "button" class = "head-btn"   > <a href = "#services">BEGIN</a></button>
+            </div>
+        </header>
+        
+
+        
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">accommodatie</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#wellness">wellness</a></li>
+                <li><a href = "#omgeving">omgeving</a></li>
+                <li><a href = "#fietsen">fietsen</a></li>
+                <li><a href = "#customers">customers</a></li>
+                <li><a href = "#contact">contact</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        
+
+        
+        <div id = "modal"></div>
+        
+
+        
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>We welcome you every day with warmth and a desire to relish you. 
+                            We offer various Indian specialties all more refined than each other, 
+                            and if you are a couple, we even have a special formula for you, which
+                            will delight your two mouths and bring them together as if they were only one. 
+                            Sumptuous. Delicious. </p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Our chic yet casual bar invites you to start, or end, the day to the sound of clinking 
+                            glasses. Try one of our unique 1040 cocktails or sample some of our many Belgian beers.
+                             A unique experience guaranteed thanks to a...</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+              
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Enjoy coming into a happy a safe work place when everything is organized 
+                            and there is team work thru out the work place when management works 
+                           with their employees to keep them happy and feel appreciated..</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+               
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Concept in Hotel  It is the moral and legal responsibility of a hotel to
+                            protect its guests and their property against threats posed by human beings
+                            with a conscious intent to harm them.  The security department of the hotel
+                           is responsible for the overall security of the building, in-house guests, visitors,
+                          day users, and employees of the hotel. !</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+               
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form" >
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item"> 
+                    <input type = "submit" class = "btn" value = "Book Now"  >
+                    
+                </div>
+            </form>
+        </div>
+           
+         <!----ROOMS-->
+        <section class = "rooms sec-width" id = "roooms">
+            <div class = "title">
+                <h2>SLAAPKAMMERS</h2>
+            </div>
+            <div class = "rooms-container">
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>SLAAP KAMMER 1</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comfortabel voelen.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Geniet van het uitzicht.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Voel je meer veilig.
+                            </li>
+                        </ul>
+                        <p>Ruimte en daglicht voor deze slaapkamer van 35m² met een kitchenette, een badkamer met bad of douche,
+                            een bureau en een eethoek. Minibar, koffie- en theefaciliteiten, digitale televisie met Chromecast
+                             in slaapkamer</p>
+                        <p class = "rate">
+                            <span>€99.00 /</span> Per nacht
+                        </p>
+                        <button type = "button" class = "btn" id="book">boek nu</button>
+                    </div>
+                </article>
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>SLAAP KAMMER 2</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comfortabel voelen.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Geniet van het uitzicht.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Voel je meer veilig.
+                            </li>
+                        </ul>
+                        <p>Absolute rust voor deze standaard kamer van 35m² met kitchenette, bad of douche, een bureau, een
+                            eethoek en een terras met uitzicht op de tuin. Minibar, koffie- en theefaciliteiten, digitale televisie
+                             met chromecast in de slaapkamer.
+                            Een geweldig uitzicht over Brussel vanuit de kamers op de hogere verdiepingen.</p>
+                        <p class = "rate">
+                            <span>€99.00 /</span> Per Nacht
+                        </p>
+                        <button type = "button" class = "btn">beok nu</button>
+                    </div>
+                </article>
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/room3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>SLAAP KAMMER 3</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comfortabel voelen.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Geniet van het uitzicht.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Voel je meer veilig.
+                            </li>
+                        </ul>
+                        <p>De First Garden Room verwelkomt u elke ochtend voor het ontbijtbuffet. Het is prettig
+                            ruimte geopend op een prachtige Belgische tuin geeft u de mogelijkheid om de stress van de
+                             stad door je te ontspannen te midden van groene bomen en bloemen aan de rivierzijde.</p>
+                        <p class = "rate">
+                            <span>€99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">beok nu</button>
+                    </div>
+                </article>  
+                </div>
+              </section>
+
+            <br>
+
+
+ 
+  <!----wellness-->
+  <section class = "rooms sec-width" id = "wellness">
+    <div class = "title">
+        <h2>WELLNESS</h2>
+    </div>
+    <div class = "rooms-container">
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/Wellness2.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>KLASSIEKE KAMERS</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Comfortabel voelen.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Geniet van het uitzicht.
+
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Voel je meer veilig.
+                    </li>
+                </ul>
+                <p>Heb een goede tijd om te sporten, te ontspannen en te 
+                    genieten van het uitzicht. Deze kamer heeft veel open ruimte 
+                    zodat u zich comfortabeler en zonder geluid kunt 
+                    voelen.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Nacht
+                </p>
+                <button type = "button" class = "btn">beok nu</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/Wellness1.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>KLASSIEKE KAMERS</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Comfortabel voelen.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Geniet van het uitzicht.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        oel je meer veilig.
+                    </li>
+                </ul>
+                <p>Absolute rust voor deze standaard kamer van 35m² met kitchenette, bad of douche, een bureau, een
+                    eethoek en een terras met uitzicht op de tuin. Minibar, koffie- en theefaciliteiten, digitale televisie
+                     met chromecast in de slaapkamer.
+                    Een geweldig uitzicht over Brussel vanuit de kamers op de hogere verdiepingen.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Nacht
+                </p>
+                <button type = "button" class = "btn">beok nu</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/Wellness4.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>KLASSIEKE KAMERS</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Comfortabel voelen.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Geniet van het uitzicht.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        voel je meer veilig.
+                    </li>
+                </ul>
+                <p>De First Garden Room verwelkomt u een prachtige Belgische tuin die u de
+                     mogelijkheid geeft om stress te vergeten, de warmte te voelen in de douche
+                    bomen en bloemen aan de rivierzijde.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">beok nu</button>
+            </div>
+        </article>  
+        </div>
+      </section>
+  
+
+              
+          
+        <!----Omgiving-->
+  <section class = "rooms sec-width" id = "omgeving">
+    <div class = "title">
+        <h2>OMGEVING</h2>
+    </div>
+    <div class = "rooms-container">
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/omgiving3.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>MOOIE OMGEVING</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>Space and daylight for this bedroom of 35m² with a kitchenette, a bathroom with bath or shower,
+                    a desk and a dining corner.Minibar, coffee & tea making facilities, digital television with Chromecast
+                     in bedroom</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/omgeving2.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>NICE ENVIRONMENT</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>Absolute quietness for this standard room of 35m² with a kitchenette, bath or shower, a desk, a 
+                    dining corner and a terrace our garden view.Minibar, coffee & tea making facilities, digital television
+                     with chromecast in the bedroom.
+                    An amazing view of Brussels from the rooms on the high floors.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/omgiving1.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>NICE ENVIRONMENT</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>The First Garden Room welcomes you every morning for the buffet breakfast time. It’s a pleasant 
+                    space opened onto a beautiful Belgian garden gives you the opportunity to forget the stress of the
+                     city by relaxing  you in the middle of green trees and flowers on the River side.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>  
+        </div>
+      </section>
+  
+
+
+
+         
+        <!----fietsen-->
+  <section class = "rooms sec-width" id = "fietsen">
+    <div class = "title">
+        <h2>FIETSEN</h2>
+    </div>
+    <div class = "rooms-container">
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/cycling2.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>NICE ENVIRONMENT</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>Space and daylight for this bedroom of 35m² with a kitchenette, a bathroom with bath or shower,
+                    a desk and a dining corner.Minibar, coffee & tea making facilities, digital television with Chromecast
+                     in bedroom</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/cycling1.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>NICE ENVIRONMENT</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>Absolute quietness for this standard room of 35m² with a kitchenette, bath or shower, a desk, a 
+                    dining corner and a terrace our garden view.Minibar, coffee & tea making facilities, digital television
+                     with chromecast in the bedroom.
+                    An amazing view of Brussels from the rooms on the high floors.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>
+        
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/cycling3.jpg" alt = "room image">
+            </div>
+            <div class = "room-text">
+                <h3>NICE ENVIRONMENT</h3>
+                <ul>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel comfortable.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Enjoy the view.
+                    </li>
+                    <li>
+                        <i class = "fas fa-arrow-alt-circle-right"></i>
+                        Feel more secured.
+                    </li>
+                </ul>
+                <p>The First Garden Room welcomes you every morning for the buffet breakfast time. It’s a pleasant 
+                    space opened onto a beautiful Belgian garden gives you the opportunity to forget the stress of the
+                     city by relaxing  you in the middle of green trees and flowers on the River side.</p>
+                <p class = "rate">
+                    <span>€99.00 /</span> Per Night
+                </p>
+                <button type = "button" class = "btn">book now</button>
+            </div>
+        </article>  
+        </div>
+      </section>
+
+
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                   
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>I don’t think I ever stayed here before but I will certainly stay here again. 
+                            The bed was very comfortable. It was quiet. Very reasonable. 
+                            Friendly and very accommodating front desk.</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Shuan & Kaith, Italy</span>
+                    </div>
+                  
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Needed rooms for a wedding weekend. Easy to book with polite and professional phone staff. 
+                            We found the motel to be very clean with super nice owners 
+                            who truly want the best for their guests. Highly recommend.</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Mary , Canada</span>
+                    </div>
+                   
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>We had an amazing experience staying here for a wedding in Skaneateles. 
+                            Our room, like the rest of the motel, 
+                            was clean and well maintained.</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>John & Lucas  Name, Colombia</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+       
+        
+       
+        <footer class = "footer"  id="contact">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Various activities are offered in the area, such as hiking, cycling, fishing and horse
+                        ding.The most important asset is its central location, which means that all cycling
+                         and hiking hubsare nearby.You can arrive between 14.00h and 18.00h or on 
+                         request and leave before 11.00h.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Generaal de Wittestraat 11
+                            3545 Halen
+                            Building
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +32 (0) 486054338
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@bednblues.be
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+       
+        
+        <script src="script.js"></script>
+    </body>
 </html>
