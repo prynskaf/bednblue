@@ -3,7 +3,7 @@
 
 :root{
     --transition: all 0.7s ease;
-    --yellow: #f9d342;
+    --yellow:  #03a9f4;
     --dark: #292826;
 }
 
@@ -479,6 +479,14 @@ img{
     background: var(--yellow);
     color: #fff;
 }
+
+.service-content button a{
+   text-decoration: none ;
+   color: white;
+   
+}
+
+
 @media(min-width: 992px){
     .services-container{
         display: grid;
