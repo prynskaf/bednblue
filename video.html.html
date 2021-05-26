@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>video</title>
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="deen.css">
+	
+</head>
+<body>
+
+<section class="heads" id="heads"> 
+
+<ul class="nav">
+		<li><a href="index.html">Home</a></li>
+	  </ul>
+</section>
+	
+
+
+	<div class="banner">
+		<div class="content">
+			<img src="images/bg.jpg.jpg"  alt="image" >
+			<h2>Presentatievideo van Bed'nBlues </h2>
+		     <p>Op deze link vindt u een video van Bed'nBlue, deze wordt 
+				 geleverd met foto-dia's en volledige details over het hotel.
+				  Het hele idee is om te laten zien hoe schattig de plek is.
+				   Zet een koptelefoon op terwijl u via deze link surft en 
+				 geef ons uw voorbeeld ervan</p>
+				   <a href="#" onclick="toggle();">Bekijk video</a>
+				   	</div>
+	               </div>
+
+<div class="trailer">
+	<video src="video.mp4" controls="true">
+	</video>
+	<img src="images/close.png" alt="image" class="close" onclick="toggle();">
+</div>
+	
+	
+	<script type="text/javascript">
+    function toggle(){
+	var trailer= document.querySelector(".trailer")
+	var video= document.querySelector(".video")
+	trailer.classList.toggle("active");
+	
+
+}
+</script>
+</body>
+</html>
